@@ -32,7 +32,7 @@ if (randomNumber) {
 }
 
 // ternary operator
-console.log(randomNumber === 1 ? 'Yes' : 'No')
+console.log(randomNumber ? 'Yes' : 'No')
 
 
 /*
