@@ -17,11 +17,26 @@
 
 
 // Answer
-const calculateBMI = (height, weight) => {
-  let heightInMeters = height / 100
-  let bmi = weight / heightInMeters**2;
+const calculateBMI = (heightInCentimeters, weightInKilograms) => {
+  let heightInMeters = heightInCentimeters / 100
+  let bmi = weightInKilograms / heightInMeters**2;
   return bmi.toFixed(2);
 }
 
 console.log(calculateBMI(180, 80));
+
+
+// Solution
+//
+//  function calculateBMI(heightInCentimeters, weightInKilograms) {
+//    let heightInMeters = heightInCentimeters / 100;
+//    let bmi = weightInKilograms / heightInMeters**2;
+//  
+//    return bmi.toFixed(2);
+//  }
+//
+// Discussion
+//  The method Number.prototype.toFixed() returns a string that represents a number rounded to a fixed number of decimals.
+
+
 
